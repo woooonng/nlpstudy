@@ -1,0 +1,21 @@
+EXP_NAME: "temp"
+SEED: 42
+
+DATASET:
+  model_name: "bert"
+  max_len: 128
+  valid_size: 0.1
+  batch_size: 32
+
+MODEL:
+  model_name: "bert"
+  hidden_size: 768
+  num_labels: 2 
+
+LOG:
+  dir_path: "results"
+  file_path: ""
+  log_interval: 25 
+
+RESULT:
+  savedir: "results"

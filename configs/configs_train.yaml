@@ -1,0 +1,33 @@
+EXP_NAME: "temp"
+SEED: 42
+
+DATASET:
+  model_name: "modern_bert"
+  max_len: 128
+  valid_size: 0.1
+  batch_size: 32
+
+TRAIN:    
+  max_epoch: 5        # t/b/iter/e -> 40000/32/1250/1, 40000/64/625/1
+  eval_interval: 25
+  use_wandb: False
+  wandb_project: 'bert'
+
+MODEL:
+  model_name: "modern_bert"
+  hidden_size: 768
+  num_labels: 2 
+
+OPTIMIZER:
+  name: Adam   # only supported
+  lr: 5e-5
+  betas: (0.9, 0.999)
+  weight_decay: 0.001
+
+LOG:
+  dir_path: results/log
+  file_path: ""
+  log_interval: 25
+
+RESULT:
+  savedir: "results"
