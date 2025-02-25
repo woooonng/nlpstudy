@@ -31,3 +31,16 @@ The trends of validation loss and accuracy for the two models are shown in the f
   <br />
   <img src="https://github.com/user-attachments/assets/712b35e2-881e-46b9-875e-ab3711f7fca9" width="60%" />
 </div>
+
+
+# Ablations
+I conducted experiments on the both models while varying the batch size
+
+| Model       | Batch | Val Acc(%) | Test Acc(%) |
+|------------|------|--------|---------|
+| BERT       | 256  | 97.63 |     89.3    |
+| BERT       | 512  | 97.31 |      89.45   |
+| BERT       | 1024 | 97.01 |         89.51|
+| ModernBERT | 256  | 97.51 |         90.49|
+| ModernBERT       | 512  | 97.77 |        91.34 |
+| ModernBERT           | 1024 | 96.26 |       91.6  |
